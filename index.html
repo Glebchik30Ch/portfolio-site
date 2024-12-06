@@ -3,59 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Developer Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>John Doe</h1>
-        <p>Web Developer | Frontend Specialist</p>
-        <a href="#contact" class="btn">Contact Me</a>
+    <!-- Головна секція -->
+    <header class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Hello. <span class="name">I am Gleb,</span> WEB-developer.</h1>
+        </div>
+        <div class="hero-image">
+          <img src="img\4.jpg" alt="Your photo" />
+        </div>
       </div>
     </header>
-    <main>
-      <section id="about">
+
+    <!-- Секція про мене -->
+    <section class="about" id="about">
+      <div class="section-content">
         <h2>About Me</h2>
         <p>
           I am a passionate web developer with experience in building modern,
-          responsive websites.
+          responsive websites. I specialize in creating seamless user
+          experiences and dynamic web applications.
         </p>
-      </section>
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="projects">
-          <div class="project">
-            <img src="1.jpg" alt="1" />
-            <p>Project 1</p>
+        <p>
+          With a background in frontend and backend development, I am skilled in
+          HTML, CSS, JavaScript, React, and Node.js. I am always eager to learn
+          new technologies and apply them to real-world problems. My goal is to
+          help businesses succeed online by creating visually appealing and
+          user-friendly websites.
+        </p>
+      </div>
+    </section>
+
+    <!-- Секція моя робота -->
+    <section class="my-work" id="work">
+      <div class="section-content">
+        <h2>My Work</h2>
+        <div class="work-grid">
+          <div class="work-item">
+            <h3>"Shopify X"</h3>
+            <img src="img\5.webp" alt="Project 1" />
+            <p>E-commerce Project (React, Node.js).</p>
           </div>
-          <div class="project">
-            <img src="2.jpg" alt="2" />
-            <p>Project 2</p>
+          <div class="work-item">
+            <h3>"CostCalc Pro"</h3>
+            <img src="img\6.webp" alt="Project 2" />
+            <p>Cost Calculation Tool for Enterprises (React, Node.js)</p>
+          </div>
+          <div class="work-item">
+            <h3>"CodeAcademy"</h3>
+            <img src="img\7.webp" alt="Project 3" />
+            <p>Learning Platform for Web Developers (HTML, CSS, JavaScript)</p>
+          </div>
+          <div class="work-item">
+            <h3>"DevCollab"</h3>
+            <img src="img\8.webp" alt="Project 4" />
+            <p>
+              Web platform with real-time collaboration.(HTML, CSS, JavaScript)
+            </p>
           </div>
         </div>
-      </section>
-      <section id="services">
-        <h2>Services</h2>
-        <ul>
-          <li>Website Design</li>
-          <li>Frontend Development</li>
-          <li>Website Optimization</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- Секція послуг -->
+    <section class="services">
+      <h2>Services</h2>
+      <ul class="services-list">
+        <li><i class="fas fa-code"></i> Website Design</li>
+        <li><i class="fas fa-laptop-code"></i> Frontend Development</li>
+        <li><i class="fas fa-search"></i> Website Optimization</li>
+        <li><i class="fas fa-chart-line"></i> SEO Services</li>
+        <li><i class="fas fa-tools"></i> Maintenance & Support</li>
+      </ul>
+    </section>
+
+    <!-- Секція контакти -->
+    <section class="contact-me">
+      <h2>Contact Me</h2>
+      <form action="#" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
     <footer>
-      <p>&copy; 2024 John Doe. All rights reserved.</p>
+      <p>&copy; 2024 Glebchik. All rights reserved.</p>
     </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>
